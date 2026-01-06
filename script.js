@@ -1,4 +1,4 @@
-const TMDB_API_KEY = '58882f7fd9932e795bde33c1056c7395'; // Your working key
+const TMDB_API_KEY = '58882f7fd9932e795bde33c1056c7395'; // ← YOUR WORKING KEY HERE
 const TMDB_BASE = 'https://api.themoviedb.org/3';
 const IMG_BASE = 'https://image.tmdb.org/t/p/w500';
 
@@ -7,9 +7,8 @@ const searchInput = document.getElementById('searchInput');
 const searchBtn = document.getElementById('searchBtn');
 
 document.addEventListener('DOMContentLoaded', () => {
-    loadMovies(); // Load trending movies
+    loadMovies();
     
-    // Search functionality
     searchBtn.addEventListener('click', handleSearch);
     searchInput.addEventListener('keypress', (e) => {
         if (e.key === 'Enter') handleSearch();
@@ -38,7 +37,7 @@ async function handleSearch() {
         const res = await fetch(`${TMDB_BASE}/search/multi?query=${encodeURIComponent(query)}&api_key=${TMDB_API_KEY}`);
         const data = await res.json();
         displayMovies(data.results.slice(0, 8));
-    } type (error) {
+    } catch (error) {  // ← FIXED: was "type (error)"
         moviesGrid.innerHTML = '<div class="col-span-full text-center py-12 text-red-400">Search failed</div>';
     }
 }
@@ -67,7 +66,7 @@ function createMovieCard(movie) {
     
     div.innerHTML = `
         <img src="${IMG_BASE}${movie.poster_path || '/no-poster.jpg'}" 
-             alt="${title}" class="w-full h-64 object-cover rounded-xl mb-4">
+             alt="${title}" class="w-full h-64 object-cover rounded-xl mb-4" onerror="this.src='https://via.placeholder.com/300x450/374151/ffffff?text=No+Image'">
         <h3 class="text-xl font-bold mb-2">${title}</h3>
         <p class="text-gray-400 mb-4 text-sm">${movie.overview?.substring(0, 100) || 'No description'}...</p>
         <div class="flex flex-wrap gap-2 mb-4">
