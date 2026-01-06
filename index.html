@@ -1,1 +1,37 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieFinder - Legal Streaming Links</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-black text-white min-h-screen">
+    <header class="p-6 border-b border-gray-800">
+        <h1 class="text-4xl font-bold text-center">MovieFinder</h1>
+        <p class="text-center text-gray-400 mt-2">Find movies & anime on Netflix, Crunchyroll, and more</p>
+    </header>
+    
+    <div class="p-6 max-w-7xl mx-auto">
+        <!-- Search & Filters -->
+        <div class="flex flex-col md:flex-row gap-4 mb-8">
+            <input type="text" id="searchInput" placeholder="Search movies or anime..." 
+                   class="flex-1 p-4 bg-gray-800 border border-gray-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <select id="filterSelect" class="p-4 bg-gray-800 border border-gray-700 rounded-xl">
+                <option value="all">All</option>
+                <option value="movie">Movies</option>
+                <option value="tv">Anime/TV</option>
+                <option value="new">New Releases</option>
+            </select>
+            <button id="searchBtn" class="px-8 py-4 bg-blue-600 hover:bg-blue-700 rounded-xl font-semibold">Search</button>
+        </div>
+        
+        <!-- Results Grid -->
+        <div id="moviesGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <!-- Movies will load here -->
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
