@@ -1,4 +1,4 @@
-const TMDB_API_KEY = '18d86f7fbb95d4be8059cb0ec503ad1a';
+const TMDB_API_KEY = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxOGQ4NmY3ZmJiOTVkNGJlODA1OWNiMGVjNTAzYWQxYSIsIm5iZiI6MTc2NzY4NjQzOC43MDMsInN1YiI6IjY5NWNjMTI2ZGM0OTFkM2Y2NTE3OGZhZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.stKcJBoS35gkDqrGA2-eFEC-uLscttpbOg7B2O-ISU8';
 const WATCHMODE_API_KEY = 'eCkhTlhX1HM46um9l4HbeUYyDOTCjWfnLt69JI2p';
 const TMDB_BASE = 'https://api.themoviedb.org/3';
 const WATCHMODE_BASE = 'https://api.watchmode.com/v1';
