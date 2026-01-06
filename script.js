@@ -1,4 +1,4 @@
-const TMDB_API_KEY = '18d86f7fbb95d4be8059cb0ec503ad1a'; // Paste your token here
+const TMDB_API_KEY = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1ODg4MmY3ZmQ5OTMyZTc5NWJkZTMzYzEwNTZjNzM5NSIsIm5iZiI6MTc2NzY5ODkwNi44MTEsInN1YiI6IjY5NWNmMWRhNjE4MWY2OGU1NmRkMDZlZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.nCkZlpKTBVyWxL00e0hwYdTDVTcuNfK8axefO8DzdUY'; // Paste your token here
 const WATCHMODE_API_KEY = 'eCkhTlhX1HM46um9l4HbeUYyDOTCjWfnLt69JI2p'; // Optional for now
 const TMDB_BASE = 'https://api.themoviedb.org/3';
 const IMG_BASE = 'https://image.tmdb.org/t/p/w500';
