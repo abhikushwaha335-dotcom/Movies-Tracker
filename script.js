@@ -1,4 +1,4 @@
-const TMDB_API_KEY = '58882f7fd9932e795bde33c1056c7395'; // ← YOUR WORKING KEY HERE
+const TMDB_API_KEY = 'e82d6b7d885132b4f1b3bfc6fbbe8aa6'; // ← YOUR WORKING KEY HERE
 const TMDB_BASE = 'https://api.themoviedb.org/3';
 const IMG_BASE = 'https://image.tmdb.org/t/p/w500';
 
