@@ -19,12 +19,6 @@ Built using **HTML**, **Tailwind CSS**, and **JavaScript**, this project uses th
 
 ---
 
-## 📸 Preview
-
-![MovieFinder Preview](https://via.placeholder.com/1200x600/111827/ffffff?text=MovieFinder+Preview)
-
----
-
 ## 🛠️ Technologies Used
 
 - HTML5
