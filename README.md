@@ -35,4 +35,6 @@ MovieFinder/
 │
 ├── index.html
 ├── script.js
+├── .gitignore
 └── README.md
+
